@@ -1,6 +1,6 @@
 import pickle
 from pathlib import Path
-import streamlit_authenticator as stauth
+
 
 import streamlit as st
 from PIL import Image
