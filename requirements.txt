@@ -1,5 +1,5 @@
 matplotlib
 numpy
 Pillow
-skimage
+scikit-image
 streamlit
