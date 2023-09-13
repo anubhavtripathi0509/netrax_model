@@ -3,3 +3,4 @@ numpy
 Pillow
 scikit-image
 streamlit
+scikit-learn
