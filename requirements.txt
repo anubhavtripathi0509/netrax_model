@@ -3,5 +3,5 @@ numpy
 Pillow
 scikit-image
 streamlit
-scikit-learn
+scikit-learn==1.2.2
 joblib
