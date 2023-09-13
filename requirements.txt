@@ -4,5 +4,5 @@ Pillow
 scikit-image
 streamlit
 scikit-learn
-pickle
+joblib
 gzip

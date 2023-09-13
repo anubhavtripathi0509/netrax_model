@@ -1,4 +1,4 @@
-import pickle
+import joblib
 import matplotlib.pyplot as plt
 import numpy as np
 from skimage.io import imread
@@ -10,7 +10,7 @@ compressed_model_filename = 'compressed_model.p.gz'
 
 # Load the compressed model using gzip.
 with gzip.open(compressed_model_filename, 'rb') as compressed_model_file:
-    model = pickle.load(compressed_model_file)
+    model = joblib.load(compressed_model_file)
 
 # Testing a brand new Image
 def Diabetic_Retinopathy(img):
