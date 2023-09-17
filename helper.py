@@ -5,7 +5,6 @@ from skimage.io import imread
 from skimage.transform import resize
 import gzip
 from tensorflow.keras.models import load_model
-import cv2
 import tensorflow as tf
 
 # model = pickle.load(open('DB_model.p','rb'))
