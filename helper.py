@@ -41,18 +41,17 @@ def Diabetic_Retinopathy(img):
 
     return predicted_output
 
-def Glaucoma_Detection(img):
-    img1 = cv2.imread(img)
-    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-    plt.show()
-    resize = tf.image.resize(img, (256,256))
-    plt.imshow(resize.numpy().astype(int))
-    plt.show()
+def Glaucoma_Detection(uploaded_file):
+    # print("Uploaded file:", uploaded_file)
+    img1 = imread(uploaded_file)
+    resize = tf.image.resize(img1, (256,256))
+    # plt.imshow(resize.numpy().astype(int))
+    # plt.show()
     glaucoma_result = glaucoma_model.predict(np.expand_dims(resize/255,0))
 
     if glaucoma_result >  0.2:
-        glaucoma_output = print(f"Glaucoma detected")
+        glaucoma_output = "Glaucoma detected"
     else:
-        glaucoma_output = print(f"Glaucoma not detected")
+        glaucoma_output = "Glaucoma not detected"
 
     return glaucoma_output
