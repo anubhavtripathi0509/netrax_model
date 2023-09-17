@@ -6,10 +6,10 @@ from skimage.transform import resize
 import gzip
 
 # model = pickle.load(open('DB_model.p','rb'))
-compressed_model_filename = 'compressed_model.p.gz'
+DB_compressed_model_filename = 'saved_models/DB_model.p.gz'
 
 # Load the compressed model using gzip.
-with gzip.open(compressed_model_filename, 'rb') as compressed_model_file:
+with gzip.open(DB_compressed_model_filename, 'rb') as compressed_model_file:
     model = joblib.load(compressed_model_file)
 
 # Testing a brand new Image
