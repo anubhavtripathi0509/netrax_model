@@ -24,14 +24,14 @@ def Diabetic_Retinopathy(img):
     y_out = model.predict(flat_data)
 
     if y_out == 0:
-        predicted_output = 'Mild'
+        predicted_output = 'Mild Diabetic Retinopathy'
     elif y_out == 1:
-        predicted_output = 'Moderate'
+        predicted_output = 'Moderate Diabetic Retinopathy'
     elif y_out == 2:
-        predicted_output = 'No DR'
+        predicted_output = 'No Diabetic Retinopathy'
     elif y_out == 3:
-        predicted_output = 'Proliferate DR'
+        predicted_output = 'Proliferate Diabetic Retinopathy'
     else:
-        predicted_output = 'Severe'
+        predicted_output = 'Severe Diabetic Retinopathy'
 
     return predicted_output
