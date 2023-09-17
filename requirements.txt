@@ -6,5 +6,3 @@ streamlit
 scikit-learn==1.2.2
 joblib
 tensorflow
-imghdr
-os
