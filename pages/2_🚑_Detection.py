@@ -1,6 +1,11 @@
 import streamlit as st
 import helper
 
+st.set_page_config(
+    page_title="NetraX Healthcare",
+    page_icon="🔥",
+)
+
 st.title("Diabetic Retinopathy Detection")
 # st.sidebar.subheader("This is an model for Diabetic retinopathy")
 # Upload
