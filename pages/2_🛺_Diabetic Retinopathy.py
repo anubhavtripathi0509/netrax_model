@@ -10,5 +10,7 @@ if uploaded_file is not None:
 
     if st.sidebar.button("Show Result"):
         predicted_output = helper.Diabetic_Retinopathy(uploaded_file)
+        glaucoma_output = helper.Glaucoma_Detection(uploaded_file)
         st.header("Result")
-        st.text(f"Predicted Output: {predicted_output}")
+        st.subheader(f"Predicted Output of Diabetic Retinopathy: {predicted_output}")
+        st.subheader(f"Predicted Output of Glaucoma: {glaucoma_output}")
