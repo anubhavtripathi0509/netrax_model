@@ -6,7 +6,7 @@ st.set_page_config(
     page_icon="🚑",
 )
 
-st.title("Diabetic Retinopathy Detection")
+st.title("NetraX Eye Disease Detection")
 # st.sidebar.subheader("This is an model for Diabetic retinopathy")
 # Upload
 uploaded_file = st.sidebar.file_uploader("Upload your file here...", type=['png', 'jpeg', 'jpg'])
