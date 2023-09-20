@@ -8,7 +8,7 @@ from tensorflow.keras.models import load_model
 import tensorflow as tf
 
 # model = pickle.load(open('DB_model.p','rb'))
-DB_compressed_model_filename = 'saved_models/DB_model.p.g'
+DB_compressed_model_filename = 'saved_models/DB_model.p.gz'
 
 # Load the compressed model using gzip.
 with gzip.open(DB_compressed_model_filename, 'rb') as compressed_model_file:
